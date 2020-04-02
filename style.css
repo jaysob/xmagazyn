@@ -1,7 +1,4 @@
-
-
-
-/* General */
+/* <--- General ---> */
 
 body {
     background: #ffffff;
@@ -17,7 +14,7 @@ body {
     color: #000000;
 }
 
-header, #header-navigation, #nav-wrapper, .wrapper, #about-us, #attitudes, #storages, #reservation, #locate-us {
+header, #header-navigation, #nav-wrapper, .wrapper, #about-us, #attitudes, #storages, #reservation, #locate-us, footer {
     display: flex;
 }
 
@@ -26,11 +23,11 @@ header, #header-navigation, #nav-wrapper, .wrapper, #about-us, #attitudes, #stor
     align-items: center;
 }
 
-#storages, #locate-us {
-    background: #e2e2e2;
+#storages {
+    background: #f3f3f3;
 }
 
-#about-us, #attitudes, #storages, #reservation {
+#about-us, #attitudes, #storages, #reservation, footer {
     justify-content: center;
 }
 
@@ -42,7 +39,7 @@ header, #header-navigation, #nav-wrapper, .wrapper, #about-us, #attitudes, #stor
 }
 
 h1, h2 {
-    color: red;
+    color: #da251d;
     align-self: flex-start;
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -53,11 +50,11 @@ h1, h2 {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 hr {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0;
     width: 80%;
 }
@@ -66,23 +63,23 @@ hr.hr-1 {
     border: 0;
     height: 2px;
     margin: 0 0 1rem 0;
-    background-image: linear-gradient(to right, red, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, #da251d, rgba(0, 0, 0, 0));
 }
 
 hr.hr-2 {
-    background-color: #e2e2e2;
+    background-color: #f3f3f3;
     border: 0;
     height: 2px;
     margin: 0 0 2rem 0;
-    background-image: linear-gradient(to left, red, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to left, #da251d, rgba(0, 0, 0, 0));
     align-self: flex-end;
 }
 
 hr.dunno {
-    height: 2.57px; /* I don't understand why height in hr is cutted for sections with this class but it needs to be here for proper height display... */
+    height: 2.57px; /* I don't understand why height in hr has been cut for sections with this class but it needs to be here for proper height display... */
 }
 
-/* Navbar */
+/* <--- Navbar ---> */
 
 header {
     position: sticky;
@@ -142,15 +139,15 @@ nav .nav-category {
 }
 
 nav .nav-category:hover {
-    border-top: 2px solid red;
-    /* border-bottom: 2px solid red; */
+    border-top: 2px solid #da251d;
+    /* border-bottom: 2px solid #da251d; */
 }
 
 
 nav .nav-category a {
     text-align: center;
-    line-height: 650%;
-    font-size: 14px;
+    line-height: 600%;
+    font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     color: #000000;
@@ -161,22 +158,17 @@ nav .nav-category a {
 }
 
 nav .nav-category a:hover {
-    color: red;
+    color: #da251d;
 }
 
-/* Slider */
+/* <--- Slider ---> */
 
 @keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -100%; }
-70% { left: -100%; }
-75% { left: -200%; }
-95% { left: -200%; }
-100% { left: -300%; }
-}
+    0%, 25%     { margin-left: 0; }
+    33%, 58%    { margin-left: -100%; }
+    66%, 91%	{ margin-left: -200%; }
+    99%, 100%        { margin-left: -300%; }
+  }
 
 figure { 
   margin: 0; 
@@ -193,7 +185,7 @@ figure.slider {
   width: 500%;
   height: 40%;
   font-size: 0; 
-  animation: 30s slidy infinite; 
+  animation: 24s slidy infinite; 
 }
 
 figure.slider figure { 
@@ -206,7 +198,6 @@ figure.slider figure {
 figure.slider img { 
     width: 100%;
     height: auto;
-    max-height: 43.8rem;
 }
 
 figure.slider figure figcaption { 
@@ -219,7 +210,7 @@ figure.slider figure figcaption {
   padding: 1rem; 
 }
 
-/* Attitudes section */
+/* <--- Attitudes section ---> */
 
 .attitudes {
     display: flex;
@@ -244,7 +235,7 @@ figure.slider figure figcaption {
 
 .attitude p {
     text-align: center;
-    font-size: 15px;
+    font-size: 1.05rem;
 }
 
 .attitude img {
@@ -252,7 +243,39 @@ figure.slider figure figcaption {
     width: 120px;
 }
 
-/* Containers */
+/* Parallax element */
+
+.parallax {
+    width: 100%;
+    height: 15em;
+}
+
+.parallax-area {
+    background: url('images/parallax-selfstorage.jpeg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-area2 {
+    background: url('images/parallax-selfstorage2.jpeg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-area p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* <--- Containers ---> */
 
 .containers {
     display: flex;
@@ -320,19 +343,19 @@ figure.slider figure figcaption {
 }
 
 .containers .price-bg .price-text p span {
-    color: red;
+    color: #da251d;
     font-weight: 700;
     font-size: 1.4rem;
 }
 
-/* Price btn */
+/* <--- Price btn ---> */
 
 .ghost_btn {
     text-decoration: none;
     font-size: 120%;
     font-weight: 700;
-    color: red;
-    border: 2px solid red;
+    color: #da251d;
+    border: 2px solid #da251d;
     padding: 0.65em 1.7em;
     display: inline-block;
     overflow: hidden;
@@ -342,13 +365,159 @@ figure.slider figure figcaption {
  
 }
 .ghost_btn:hover{
-  background: red;
+  background: #da251d;
   color: #ffffff;
 }
 
-/* Locate us - Google Maps */
+/* <--- Company details ---> */
+
+.company-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.company-details img {
+    height: 9rem;
+}
+
+.company-details p, .company-details a {
+    font-size: 2rem; 
+}
+
+.company-details p {
+    padding-left: 15px;
+}
+
+.company-details a {
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.company-location {
+    display: flex;
+    align-items: center;
+}
+
+.contact-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-data img {
+    height: 3rem;
+}
+
+.call-data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mail-data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* <--- Locate us - Google Maps ---> */
 
 #map-area {
-    height: 5em;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
-   }
+    width: 100%;
+}
+
+/* <--- Footer ---> */
+
+footer {
+    background-color: #da251d;
+}
+
+footer .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+footer img {
+    height: 2rem;
+}
+
+footer p, footer a {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Logo */
+
+.foot-logo img {
+    height: 6rem;
+    width: auto;
+}
+
+/* Company details */
+
+.foot-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.foot-details .foot-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot-details .foot-contact .foot-call {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.foot-contact .foot-mail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.foot-contact .foot-call a, .foot-details .foot-contact .foot-mail a {
+    padding-left: 8px;
+}
+
+.foot-contact .foot-call a {
+    padding-bottom: 5px;
+}
+
+/* Social media */
+
+footer .foot-sm {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foot-sm p {
+    font-size: 2rem;
+    margin: 0 0 1.05rem 0;
+}
+
+footer .foot-sm .sm-logotypes {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .foot-sm img {
+    height: 2.5rem;
+}
+
+
+
