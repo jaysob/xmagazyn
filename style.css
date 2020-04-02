@@ -1,0 +1,354 @@
+
+
+
+/* General */
+
+body {
+    background: #ffffff;
+    font-family: 'Noto-sans', 'Roboto', sans-serif, monospace;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: #000000;
+}
+
+header, #header-navigation, #nav-wrapper, .wrapper, #about-us, #attitudes, #storages, #reservation, #locate-us {
+    display: flex;
+}
+
+#locate-us {
+    flex-direction: column;
+    align-items: center;
+}
+
+#storages, #locate-us {
+    background: #e2e2e2;
+}
+
+#about-us, #attitudes, #storages, #reservation {
+    justify-content: center;
+}
+
+.wrapper {
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    padding: 2rem 0 4rem 0;
+}
+
+h1, h2 {
+    color: red;
+    align-self: flex-start;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+#storages h2, #locate-us h2, #storages hr.hr2, #locate-urs hr.hr2 {
+    align-self: flex-end;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+hr {
+    background-color: #fff;
+    padding: 0;
+    width: 80%;
+}
+  
+hr.hr-1 {
+    border: 0;
+    height: 2px;
+    margin: 0 0 1rem 0;
+    background-image: linear-gradient(to right, red, rgba(0, 0, 0, 0));
+}
+
+hr.hr-2 {
+    background-color: #e2e2e2;
+    border: 0;
+    height: 2px;
+    margin: 0 0 2rem 0;
+    background-image: linear-gradient(to left, red, rgba(0, 0, 0, 0));
+    align-self: flex-end;
+}
+
+hr.dunno {
+    height: 2.57px; /* I don't understand why height in hr is cutted for sections with this class but it needs to be here for proper height display... */
+}
+
+/* Navbar */
+
+header {
+    position: sticky;
+    justify-content: center;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 9999;
+    height: auto;
+}
+
+#header-navigation {
+    position: sticky;
+    justify-content: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    max-height: 6em;
+
+    -moz-box-shadow:0 4px 4px rgba(182, 182, 182, 0.75);    
+    -webkit-box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+    box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+}
+
+#nav-wrapper {
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+}
+
+.nav-logo img {
+    width: 240px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+}
+
+nav .brd-span {
+    height: 50%;
+    justify-self: center;
+    align-self: center;
+    border: 0.5px solid rgb(241, 241, 241);
+}
+
+nav .nav-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 8em;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    /* border-left: 1px solid #ececec; */
+}
+
+nav .nav-category:hover {
+    border-top: 2px solid red;
+    /* border-bottom: 2px solid red; */
+}
+
+
+nav .nav-category a {
+    text-align: center;
+    line-height: 650%;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav .nav-category a:hover {
+    color: red;
+}
+
+/* Slider */
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -100%; }
+70% { left: -100%; }
+75% { left: -200%; }
+95% { left: -200%; }
+100% { left: -300%; }
+}
+
+figure { 
+  margin: 0; 
+  background: #101010;
+}
+
+div#captioned-gallery { 
+  width: 100%;
+  overflow: hidden; 
+}
+
+figure.slider { 
+  position: relative; 
+  width: 500%;
+  height: 40%;
+  font-size: 0; 
+  animation: 30s slidy infinite; 
+}
+
+figure.slider figure { 
+  width: 20%; 
+  height: auto;
+  display: inline-block;
+  position: inherit; 
+}
+
+figure.slider img { 
+    width: 100%;
+    height: auto;
+    max-height: 43.8rem;
+}
+
+figure.slider figure figcaption { 
+  position: absolute; 
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; 
+  width: 100%;
+  font-size: 2rem; 
+  padding: 1rem; 
+}
+
+/* Attitudes section */
+
+.attitudes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.attitudes .attitude {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.attitude h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.attitude p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.attitude img {
+    height: 120px;
+    width: 120px;
+}
+
+/* Containers */
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.containers .container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 100%;
+}
+
+.containers .container-box .box-bg {
+    height: 69.5%;
+}
+
+.containers .container-box .price-bg {
+    height: 28.5%;
+}
+
+.containers .box-bg, .containers .price-bg {
+    background: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.containers .box-bg p {
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.containers .box-bg .outter-container-img {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containers .box-bg .container-img img {
+    display: block;
+    margin: auto;
+}
+
+.containers .box-bg-1 img {
+    height: 150px;
+    width: auto;
+}
+
+.containers .box-bg-2 img {
+    height: 200px;
+    width: auto;
+}
+
+.containers .box-bg-3 img {
+    height: 250px;
+    width: auto;
+}
+
+.containers .box-bg .heading-container-p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.containers .price-bg .price-text p span {
+    color: red;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* Price btn */
+
+.ghost_btn {
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: 700;
+    color: red;
+    border: 2px solid red;
+    padding: 0.65em 1.7em;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: all 0.6s ease 0s;
+    cursor: pointer;
+ 
+}
+.ghost_btn:hover{
+  background: red;
+  color: #ffffff;
+}
+
+/* Locate us - Google Maps */
+
+#map-area {
+    height: 5em;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
