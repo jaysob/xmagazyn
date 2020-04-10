@@ -112,6 +112,7 @@
                 </div>
             </section>
 
+    <!-- Parallax -->
             <section class="parallax">
                 <div class="parallax-area">
                     <p>Xmagazyn - X możliwości magazynowych</p>
@@ -188,13 +189,53 @@
                 <div class="wrapper">
                     <h2>Zarezerwuj swój magazyn</h2>
                     <hr class="hr-1">
-                    <p></p>
-                    <form class="contact-form" method="POST" action="contact-form.php">
+                    <p>Wyślij do nas zgłoszenie, a my niezwłocznie skontaktujemy się z Tobą, odpowiemy na wszystkie pytania. Następnie potwierdzimy rezerwację i omówimy szczegóły najmu adekwatnie do Twoich konkretnych potrzeb. Spodziewaj się telefonu najpóźniej następnego dnia roboczego!</p>
+                    <form id="contact-form" method="POST" action="contact-form.php">
+                        <div id="top-form">
+                            <div id="customerData">    
+                                <label for="name">Firma / Imię i nazwisko</label>
+                                <br>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div id="containerData">    
+                                <label for="containerSize">Rozmiar kontenera</label>
+                                <br>
+                                <select name="containerSize" id="containerSize" required>
+                                    <option value="blank">---</option>
+                                    <option value="container_small">Kontener S - 6 m<sup>2</sup></option>
+                                    <option value="container_medium">Kontener M - 9 m<sup>2</sup></option>
+                                    <option value="container_large">Kontener L - 12 m<sup>2</sup></option>
+                                </select>
+                            </div>
+                        </div>
 
+                        <div id="bottom-form">
+                            <div id="phoneData">    
+                                <label for="tel">Numer kontaktowy</label>
+                                <br>
+                                <input type="tel" name="tel" id="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+                            </div>
+                            <div id="mailData">    
+                                <label for="email">Adres e-mail</label>
+                                <br>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                        </div>
+
+                        <div id="mail-text">
+                            <label for="message">Wiadomość (Opcjonalnie)</label>
+                            <br>
+                            <textarea name="message" id="message" style="font-family: Roboto" placeholder="Jeżeli potrzebujesz konkretnych informacji, podziel się z nami - przygotujemy wszystkie odpowiedzi przed naszą rozmową ..."></textarea>
+                        </div> 
+                        <div id="contact-submit">
+                            <input type="submit" value="Wyślij wiadomość">
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        </div>
                     </form>
                 </div>
             </section>
 
+    <!-- Parallax -->
             <section class="parallax">
                 <div class="parallax-area2"></div>
             </section>
@@ -245,8 +286,7 @@
                     * The callback parameter executes the initMap() function
                     -->
                     <!-- <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwUEA7dnZRJQqkxA8yEhODyl1XzYUBBUE&callback=initMap" type=
-                    "text/javascript">
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwUEA7dnZRJQqkxA8yEhODyl1XzYUBBUE&callback=initMap" type="text/javascript">
                     </script> -->
                 </div>
             </section>
