@@ -40,7 +40,8 @@ header, #header-navigation, #nav-wrapper, .wrapper, #about-us, #attitudes, #stor
 }
 
 h1, h2 {
-    color: #1d75da;
+    /* color: #1d75da; */
+    color: #01C237;
     align-self: flex-start;
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -64,7 +65,8 @@ hr.hr-1 {
     border: 0;
     height: 2px;
     margin: 0 0 1rem 0;
-    background-image: linear-gradient(to right, #1d75da, rgba(0, 0, 0, 0));
+    /* background-image: linear-gradient(to right, #1d75da, rgba(0, 0, 0, 0)); */
+    background-image: linear-gradient(to right, #01C237, rgba(0, 0, 0, 0));
 }
 
 hr.hr-2 {
@@ -72,7 +74,8 @@ hr.hr-2 {
     border: 0;
     height: 2px;
     margin: 0 0 2rem 0;
-    background-image: linear-gradient(to left, #1d75da, rgba(0, 0, 0, 0));
+    /* background-image: linear-gradient(to left, #1d75da, rgba(0, 0, 0, 0)); */
+    background-image: linear-gradient(to left, #01C237, rgba(0, 0, 0, 0));
     align-self: flex-end;
 }
 
@@ -140,7 +143,8 @@ nav .nav-category {
 }
 
 nav .nav-category:hover {
-    border-top: 2px solid #1d75da;
+    /* border-top: 2px solid #1d75da; */
+    border-top: 2px solid #01C237;
     /* border-bottom: 2px solid #da251d; */
 }
 
@@ -159,7 +163,8 @@ nav .nav-category a {
 }
 
 nav .nav-category a:hover {
-    color: #1d75da;
+    /* color: #1d75da; */
+    color: #01C237;
 }
 
 /* <--- Slider ---> */
@@ -344,7 +349,8 @@ figure.slider figure figcaption {
 }
 
 .containers .price-bg .price-text p span {
-    color: #1d75da;
+    /* color: #1d75da; */
+    color: #01C237;
     font-weight: 700;
     font-size: 1.4rem;
 }
@@ -355,8 +361,10 @@ figure.slider figure figcaption {
     text-decoration: none;
     font-size: 120%;
     font-weight: 700;
-    color: #1d75da;
-    border: 2px solid #1d75da;
+    /* color: #1d75da; */
+    color: #01C237;
+    /* border: 2px solid #1d75da; */
+    border: 2px solid #01C237;
     padding: 0.65em 1.7em;
     display: inline-block;
     overflow: hidden;
@@ -367,7 +375,8 @@ figure.slider figure figcaption {
 }
 
 .ghost_btn:hover, input[type=submit]:hover{
-  background: #1d75da;
+  /* background: #1d75da; */
+  background: #01C237;
   color: #ffffff;
 }
 
@@ -389,7 +398,8 @@ figure.slider figure figcaption {
 #contact-form label {
     font-size: 18px;
     font-weight: 700;
-    color: #1d75da;
+    /* color: #1d75da; */
+    color: #01C237;
     margin-bottom: 1em;
 }
 
@@ -414,7 +424,8 @@ input[type=text], select, input[type=tel], input[type=email], textarea {
 
 input[type=text]:focus, select:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
     outline: none !important;
-    border: 1px solid #1d75da;
+    /* border: 1px solid #1d75da; */
+    border: 1px solid #01C237;
 }
 
 #mail-text {
@@ -503,7 +514,8 @@ input[type=text]:focus, select:focus, input[type=tel]:focus, input[type=email]:f
 /* <--- Footer ---> */
 
 footer {
-    background-color: #1d75da;
+    /* background-color: #1d75da; */
+    background-color: #01C237;
 }
 
 footer .wrapper {
