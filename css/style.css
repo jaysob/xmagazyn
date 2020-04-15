@@ -21,6 +21,7 @@ header, #header-navigation, #nav-wrapper, .wrapper, #about-us, #attitudes, #stor
 #locate-us {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #storages {
@@ -39,7 +40,7 @@ header, #header-navigation, #nav-wrapper, .wrapper, #about-us, #attitudes, #stor
 }
 
 h1, h2 {
-    color: #da251d;
+    color: #1d75da;
     align-self: flex-start;
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -63,7 +64,7 @@ hr.hr-1 {
     border: 0;
     height: 2px;
     margin: 0 0 1rem 0;
-    background-image: linear-gradient(to right, #da251d, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, #1d75da, rgba(0, 0, 0, 0));
 }
 
 hr.hr-2 {
@@ -71,7 +72,7 @@ hr.hr-2 {
     border: 0;
     height: 2px;
     margin: 0 0 2rem 0;
-    background-image: linear-gradient(to left, #da251d, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to left, #1d75da, rgba(0, 0, 0, 0));
     align-self: flex-end;
 }
 
@@ -139,7 +140,7 @@ nav .nav-category {
 }
 
 nav .nav-category:hover {
-    border-top: 2px solid #da251d;
+    border-top: 2px solid #1d75da;
     /* border-bottom: 2px solid #da251d; */
 }
 
@@ -158,7 +159,7 @@ nav .nav-category a {
 }
 
 nav .nav-category a:hover {
-    color: #da251d;
+    color: #1d75da;
 }
 
 /* <--- Slider ---> */
@@ -251,7 +252,7 @@ figure.slider figure figcaption {
 }
 
 .parallax-area {
-    background: url('images/parallax-selfstorage.jpeg') no-repeat center;
+    background: url('parallax-selfstorage.jpeg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -261,7 +262,7 @@ figure.slider figure figcaption {
 }
 
 .parallax-area2 {
-    background: url('images/parallax-selfstorage2.jpeg') no-repeat center;
+    background: url('parallax-selfstorage2.jpeg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -343,7 +344,7 @@ figure.slider figure figcaption {
 }
 
 .containers .price-bg .price-text p span {
-    color: #da251d;
+    color: #1d75da;
     font-weight: 700;
     font-size: 1.4rem;
 }
@@ -354,8 +355,8 @@ figure.slider figure figcaption {
     text-decoration: none;
     font-size: 120%;
     font-weight: 700;
-    color: #da251d;
-    border: 2px solid #da251d;
+    color: #1d75da;
+    border: 2px solid #1d75da;
     padding: 0.65em 1.7em;
     display: inline-block;
     overflow: hidden;
@@ -366,7 +367,7 @@ figure.slider figure figcaption {
 }
 
 .ghost_btn:hover, input[type=submit]:hover{
-  background: #da251d;
+  background: #1d75da;
   color: #ffffff;
 }
 
@@ -388,7 +389,7 @@ figure.slider figure figcaption {
 #contact-form label {
     font-size: 18px;
     font-weight: 700;
-    color: #da251d;
+    color: #1d75da;
     margin-bottom: 1em;
 }
 
@@ -413,7 +414,7 @@ input[type=text], select, input[type=tel], input[type=email], textarea {
 
 input[type=text]:focus, select:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
     outline: none !important;
-    border: 1px solid #da251d;
+    border: 1px solid #1d75da;
 }
 
 #mail-text {
@@ -494,12 +495,15 @@ input[type=text]:focus, select:focus, input[type=tel]:focus, input[type=email]:f
 
 #map-area {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* <--- Footer ---> */
 
 footer {
-    background-color: #da251d;
+    background-color: #1d75da;
 }
 
 footer .wrapper {
