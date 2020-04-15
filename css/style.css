@@ -83,15 +83,40 @@ hr.dunno {
     height: 2.57px; /* I don't understand why height in hr has been cut for sections with this class but it needs to be here for proper height display... */
 }
 
+main {
+    margin-top: 96px;
+}
+
+/* Scroll top */
+.scroll-top-wrapper {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 999;
+}
+    
+.scroll_top {
+      display: inline-block;
+      font-size: 36px;
+      text-align: center;
+      background: #01C237;
+      color: #fff;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      text-decoration: none;
+}
+
 /* <--- Navbar ---> */
 
 header {
-    position: sticky;
+    position: fixed;
     justify-content: center;
     background-color: #ffffff;
     top: 0;
     z-index: 9999;
-    height: auto;
+    height: 96px;
+    width: 100%;
 }
 
 #header-navigation {
@@ -276,10 +301,10 @@ figure.slider figure figcaption {
     align-items: center;
 }
 
-.parallax-area p {
+/* .parallax-area p {
     color: #fff;
     font-size: 2rem;
-}
+} */
 
 /* <--- Containers ---> */
 
@@ -591,7 +616,7 @@ footer .foot-sm {
 
 footer .foot-sm p {
     font-size: 2rem;
-    margin: 0 0 1.05rem 0;
+    margin: 0;
 }
 
 footer .foot-sm .sm-logotypes {
@@ -601,6 +626,8 @@ footer .foot-sm .sm-logotypes {
 
 footer .foot-sm img {
     height: 2.5rem;
+    width: auto;
+    margin: 1.05rem 8px 0 0;
 }
 
 

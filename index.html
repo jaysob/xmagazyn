@@ -7,6 +7,9 @@
         <title>Xmagazyn - wynajem magazynów, kontenerów, self storage</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
     </head>
     <body>
         <header>
@@ -18,13 +21,13 @@
                     </div>
                     <nav>
                         <span class="brd-span"></span>
-                        <div class="nav-category"><a href="#">o nas</a></div>
+                        <div class="nav-category"><a href="#about-us">o nas</a></div>
                         <span class="brd-span"></span>
-                        <div class="nav-category"><a href="#">kontenery</a></div>
+                        <div class="nav-category"><a href="#storages">kontenery</a></div>
                         <span class="brd-span"></span>
-                        <div class="nav-category"><a href="#">rezerwacja</a></div>
+                        <div class="nav-category"><a href="#reservation">rezerwacja</a></div>
                         <span class="brd-span"></span>
-                        <div class="nav-category"><a href="#">kontakt</a></div>
+                        <div class="nav-category"><a href="#locate-us">kontakt</a></div>
                         <span class="brd-span"></span>
                     </nav>
                 </div>
@@ -61,9 +64,9 @@
     <!-- About us -->
             <section id="about-us">
                 <div class="wrapper">
-                    <h1>Dlaczego jesteśmy najlepszym wyborem</h1>
+                    <h1>Xmagazyn - X możliwości magazynowych</h1>
                     <hr class="hr-1">
-                    <p>Xmagazyn to firma świadcząca usługi wynajmu magazynów typu self storage. Główna idea, za którą podążamy, to udostępnienie Tobie przestrzeni, której brakuje w Twoim domu lub firmie. Nasz teren jest objęty monitoringiem oraz pod całodobową ochroną, dzięki czemu nie musisz się martwić o bezpieczeństwo. Wybierz metraż, który zaspokoji Twoje potrzeby - niezależnie czy robisz remont, chcesz przechować narty, opony po sezonie czy meble biurowe. Wynajmujemy przestrzeń magazynową na elastycznych warunkach dla każdego - na jeden miesiąc, a nawet na wiele lat.</p>
+                    <p>Xmagazyn to marka świadcząca usługi wynajmu magazynów typu self storage. Główna idea, za którą podążamy, to udostępnienie Tobie przestrzeni, której brakuje w Twoim domu lub firmie. Nasz teren jest objęty monitoringiem oraz pod całodobową ochroną, dzięki czemu nie musisz się martwić o bezpieczeństwo. Wybierz metraż, który zaspokoi Twoje potrzeby - niezależnie czy robisz remont, chcesz przechować narty, opony po sezonie czy meble biurowe. Wynajmujemy przestrzeń magazynową na elastycznych warunkach dla każdego - na jeden miesiąc, a nawet na wiele lat.</p>
                     <div class="attitudes">
                         <div class="attitude attitude-1">
                             <img src="img/lock.png" alt="Bezpieczne magazyny">
@@ -77,7 +80,8 @@
                             <h3>Przejrzysta umowa</h3>
                             <p>
                                 My też nie lubimy biurokracji. Umowa jest prosta i przygotowana specjalnie pod Twoje potrzeby.
-                            </p>img                   </div>
+                            </p>
+                        </div>
                         <div class="attitude attitude-3">
                             <img src="img/people.png" alt="Dla każdego">
                             <h3>Dla wszystkich</h3>
@@ -114,7 +118,7 @@
     <!-- Parallax -->
             <section class="parallax">
                 <div class="parallax-area">
-                    <p>Xmagazyn - X możliwości magazynowych</p>
+                    <!-- <p>Xmagazyn - X możliwości magazynowych</p> -->
                 </div>
             </section>
 
@@ -139,7 +143,7 @@
                                 <div class="price-text">
                                     <p><span>199 zł</span> netto za miesiąc najmu</p>
                                 </div>
-                                <a role="button" class="ghost_btn" href="#">Zarezerwuj</a>
+                                <a role="button" class="ghost_btn btn1" href="#reservation">Zarezerwuj</a>
                             </div>
                         </div>
 
@@ -157,7 +161,7 @@
                                 <div class="price-text">
                                     <p><span>299 zł</span> netto za miesiąc najmu</p>
                                 </div>
-                                <a role="button" class="ghost_btn" href="#">Zarezerwuj</a>
+                                <a role="button" class="ghost_btn btn2" href="#reservation">Zarezerwuj</a>
                             </div>
                         </div>
 
@@ -175,7 +179,7 @@
                                 <div class="price-text">
                                     <p><span>399 zł</span> netto za miesiąc najmu</p>
                                 </div>
-                                <a role="button" class="ghost_btn" href="#">Zarezerwuj</a>
+                                <a role="button" class="ghost_btn btn3" href="#reservation">Zarezerwuj</a>
                             </div>
                         </div>
                     </div>
@@ -194,16 +198,16 @@
                             <div id="customerData">    
                                 <label for="name">Firma / Imię i nazwisko</label>
                                 <br>
-                                <input type="text" name="name" id="name">
+                                <input type="text" name="name" id="name" required>
                             </div>
                             <div id="containerData">    
                                 <label for="containerSize">Rozmiar kontenera</label>
                                 <br>
                                 <select name="containerSize" id="containerSize" required>
                                     <option value="blank">---</option>
-                                    <option value="container_small">Kontener S - 6 m<sup>2</sup></option>
-                                    <option value="container_medium">Kontener M - 9 m<sup>2</sup></option>
-                                    <option value="container_large">Kontener L - 12 m<sup>2</sup></option>
+                                    <option value="1">Kontener S - 6 m<sup>2</sup></option>
+                                    <option value="2">Kontener M - 9 m<sup>2</sup></option>
+                                    <option value="3">Kontener L - 12 m<sup>2</sup></option>
                                 </select>
                             </div>
                         </div>
@@ -248,7 +252,7 @@
                         <div class="company-location">
                             <img src="img/company.png" alt="Ikona geolokalizacji">
                             <div class="company-address">
-                                <p><strong>Xmagazyn S.C.</strong><p><p>ul. Ratajska 11<br>91-231, Łódź</p>
+                                <p><strong>Xmagazyn</strong><p><p>ul. Ratajska 11<br>91-231, Łódź</p>
                             </div>
                         </div>
                         <div class="contact-data">
@@ -289,6 +293,14 @@
                     </script> -->
                 </div>
             </section>
+
+    <!-- Scroll top -->
+            <div class="scroll-top-wrapper">
+                <a class="scroll_top" href="#captioned-gallery">
+                  ⇧
+                </a>  
+              </div>
+
         </main>
 
 <!-- Footer -->
@@ -320,9 +332,10 @@
                         <p>Znajdź nas</p>
                     </div>
                     <div class="sm-logotypes">
-                        <a href="#"><img src="img/facebook.png" alt="Xmagazyn facebook fanpage"></a>
-                        <a href="#"><img src="img/twitter.png" alt="Xmagazyn twitter"></a>
-                        <a href="#"><img src="img/linkedin.png" alt="Xmagazyn linkedin"></a>
+                        <a href="https://www.facebook.com/Xmagazyn-108101557531408" target="_blank"><img src="img/facebook.png" alt="Xmagazyn facebook fanpage"></a>
+                        <a href="https://twitter.com/xmagazyn" target="_blank"><img src="img/twitter.png" alt="Xmagazyn twitter"></a>
+                        <a href="https://www.linkedin.com/company/xmagazyn" target="_blank"><img src="img/linkedin.png" alt="Xmagazyn linkedin"></a>
+                        <a href="https://www.instagram.com/xmagazyn/" target="_blank"><img src="img/instagram.png" alt="Xmagazyn instagram"></a>
                     </div>
                 </div>
             </div>
